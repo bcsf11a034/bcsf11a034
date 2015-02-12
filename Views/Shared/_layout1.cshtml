@@ -1,0 +1,49 @@
+﻿@model Term_Project.Models.validation
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>SoulMate</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="../../Content/layout.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="logo"><a href="#"><img src="~/Images/logo_1.gif" alt="" /></a></div>
+    <div class="member_login">
+        <div class="login_box">
+            <form action="~/User/Login" method="post">
+                <fieldset>
+                    <div class="column_1">
+                        <label>username :</label>
+                        <label>password :</label>
+                    </div>
+                    <div class="column_2">
+                        <input type="text" name="Name" value="" />
+                        <input type="text" name="Password" value="" />
+                    </div>
+                    <div class="column_3">
+                        <input type="submit" src="~/Images/login_btn.gif" class="login" value="Login" />
+                    </div>
+                    <div class="column_4">
+                        <label class="password">
+                            <a href="#">
+                                Forgot <br />
+                                password
+                            </a>
+                        </label>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    @RenderBody();
+    <div id="footer">
+        <div class="footer_link">
+            <ul style="color:#FFf;">
+                Copyright (c) Sitename.com. All rights reserved. Design by Stylish
+                <a href="http://www.stylishtemplate.com" style="text-decoration:underline; color:#FFF;">Website Templates</a>.
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
